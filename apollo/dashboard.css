@@ -1,0 +1,154 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * KZ add-ons
+ */
+ .navbar-fixed-top {
+  margin-left:16.6%;
+ }/* from navbar.less:142; */
+
+ .brand-logo{
+  margin:0 0 20px 10px;
+width:150px;
+ }
+ .margin-t20-b10{
+  margin-top:20px;
+  margin-bottom:10px;
+ }
+.navbar-inverse {
+  background-color:#ed3737;
+}
+.nav>li>a:hover{
+  background-color:#2e2756;
+}
+.nav>li>a{
+  color:#fafafa;
+}
+.navbar-inverse .navbar-brand{
+  color:#ffffff;
+}
+
+.circle{
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  margin-left:170px;
+}
+.neutral-1{background-color:#edefec;}
+.neutral-2{background-color:#6d5463;}
+.neutral-3{background-color:#47122c;}
+.neutral-4{background-color:#2a062c;}
+.primary-1{background-color:#ff1b2c;}
+.primary-2{background-color:#b40933;}
+.secondary-1{background-color:#3acda0;}
+.secondary-2{background-color:#ea709f;}
+.secondary-3{background-color:#502ddc;}
+.secondary-4{background-color:#71004e;}
+
+.float-left{float:left;}
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.sub-header small{
+ color:#2a062c;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #1a1131;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #2e2756;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
