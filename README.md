@@ -1,8 +1,6 @@
-# Welcome to react-webpack-template
-> This repository holds the base template for the current version of [generator-react-webpack](https://github.com/newtriks/generator-react-webpack).
+# Opera MediaWorks Apollo Design Docs
+> This repository is the style guide for the Apollo project.
 It can also be used as the prototype for newly generated projects.
-
-[![Build Status](https://travis-ci.org/weblogixx/react-webpack-template.svg)](https://travis-ci.org/weblogixx/react-webpack-template) ![Amount of Downloads per month](https://img.shields.io/npm/dm/react-webpack-template.svg "Amount of Downloads") ![Dependency Tracker](https://img.shields.io/david/weblogixx/react-webpack-template.svg "Dependency Tracker") ![Dependency Tracker](https://img.shields.io/david/dev/weblogixx/react-webpack-template.svg "Dependency Tracker")
 
 ## Features
 The following features are currently included:
@@ -16,7 +14,7 @@ The following features are currently included:
 - [x] Support for code coverage via [isparta-loader](https://github.com/deepsweet/isparta-loader)
 
 ## What is it for?
-This template can be used directly for the creation of new projects. When using it like this, make sure to ___not___ install it via npm but download it directly. The template is (nearly) useless for itself when downloaded via npm!
+To build a stable dev version of the style guide. Possibly to be hosted later.
 
 Basically, it is currently only used as the base template of [generator-react-webpack](https://github.com/newtriks/generator-react-webpack).
 
@@ -102,11 +100,8 @@ Also, you should adjust your webpack test configuration (located in ```cfg/test.
 ```
 
 ## License
-react-webpack-template is available under MIT-License and can therefore be used in any project free of charge.
+react-webpack-template (which this is built with) is available under MIT-License and can therefore be used in any project free of charge.
 
 ## Contributors
-- Christian Schilling (cs@weblogixx.de)
-- Martin Jul (martin@mjul.com)
-- Stephan Herzog (sthzgvie@gmail.com)
-- Kashif Iqbal Khan
-- Ignat Shining (mail@igonato.com)
+- Kelley Zerga (kelleyz@opera.com)
+- Ian Sayre (ians@opera.com)

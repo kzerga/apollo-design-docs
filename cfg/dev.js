@@ -2,6 +2,8 @@
 
 let path = require('path');
 let webpack = require('webpack');
+let _ = require('lodash');
+
 let baseConfig = require('./base');
 let defaultSettings = require('./defaults');
 
@@ -27,13 +29,27 @@ let config = Object.assign({}, baseConfig, {
 });
 
 // Add needed loaders to the defaults here
-config.module.loaders.push({
-  test: /\.(js|jsx)$/,
-  loader: 'react-hot!babel-loader',
-  include: [].concat(
-    config.additionalPaths,
-    [ path.join(__dirname, '/../src') ]
-  )
-});
+config.module.loaders.push(
+  {
+    test: /\.(js|jsx)$/,
+    loader: 'react-hot!babel-loader',
+    include: [].concat(
+      config.additionalPaths,
+      [ path.join(__dirname, '/../src') ]
+    )
+  },
+  {
+    test: /.scss$/,
+    loaders: ['style', 'css', 'autoprefixer', 'sass']
+  },
+  {
+    test: /\.(png|jpg|gif)$/,
+    loader: 'url-loader?limit=8192'
+  },
+  {
+    test: /\.(woff|woff2|ttf|eot|svg)$/,
+    loader: 'file-loader'
+  }
+);
 
 module.exports = config;
