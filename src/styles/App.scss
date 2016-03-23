@@ -3,4 +3,9 @@
  * @AUTHORS: Ian Sayre & Kelley Zerga
 */
 
-@import 'variables';
+@import './utils/variables';
+
+
+// import vendors such as bootstrap and others
+@import 'vendors/bootstrap/bootstrap';
+@import 'vendors/font-awesome/font-awesome';
