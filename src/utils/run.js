@@ -5,7 +5,7 @@ require('!style!css!sass!../styles/App.scss');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import router from '../router.js';
-import Location from './loaction.js';
+import Location from './location.js';
 
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +29,7 @@ const context = {
     meta.setAttribute('name', name);
     meta.setAttribute('content', content);
     document.getElementsByTagName('head')[0].appendChild(meta);
-  },
+  }
 };
 
 function render(state) {
@@ -49,7 +49,7 @@ function run() {
       path: location.pathname,
       query: location.query,
       state: location.state,
-      context,
+      context
     });
     render(currentState);
   });
