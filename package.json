@@ -48,8 +48,10 @@
     "eslint": "~2.2.0",
     "eslint-loader": "^1.0.0",
     "eslint-plugin-react": "^4.0.0",
+    "fbjs": "^0.7.2",
     "file-loader": "^0.8.4",
     "glob": "^7.0.0",
+    "history": "^2.0.1",
     "isparta-instrumenter-loader": "^1.0.0",
     "jquery": "^2.2.2",
     "karma": "^0.13.9",
@@ -79,9 +81,11 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
     "core-js": "^2.0.0",
+    "fbjs": "^0.7.2",
     "lodash": "^4.6.1",
     "normalize.css": "^3.0.3",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react-dom": "^0.14.0",
+    "tether": "^1.2.0"
   }
 }
