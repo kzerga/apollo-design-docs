@@ -16,7 +16,7 @@ class Navigation extends Component {
   };
 
   static defaultProps = {
-    items: []
+    items: [{category: 'overview'}, {category: 'buttons'}, {category: 'color'}, {category: 'typography'}]
   };
 
   constructor(props) {
@@ -28,9 +28,9 @@ class Navigation extends Component {
       this.props.items.map(navItem => {
        let linkItem;
 
-       if (!navItem.links) {
+       // if (!navItem.links) {
          linkItem = <li key={navItem.category}><a href={'/' + navItem.category} onCLick={Link.handleClick}>{navItem.category}</a></li>;
-       } /*else {
+       /* } else {
          const subMenu = navItem.links.map(linkedPage => {
            return (
              <li key={linkedPage}><a href={'/' + linkedPage} onClick={Link.handleClick}>{linkedPage}</a></li>
@@ -44,11 +44,10 @@ class Navigation extends Component {
   }
 
   render() {
-    const items = [{category: 'overview'}, {category: 'buttons'}, {category: 'color'}, {category: 'typography'}];
     return (
       <div className="col-sm-3 col-md-2 sidebar">
         <ul className = "nav nav-sidebar">
-          {this.renderNavItems(items)}
+          {this.renderNavItems()}
         </ul>
       </div>
     );

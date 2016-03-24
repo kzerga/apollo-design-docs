@@ -7,14 +7,14 @@
 'use strict';
 
 import React, { Component, PropTypes } from 'react';
-import location from '../utils/location.js';
+import Location from '../utils/location.js';
 
 class Link extends Component {
   static propTypes = {
     to: PropTypes.string.isRequired,
     query: PropTypes.object,
     state: PropTypes.object,
-    onClick: PropTypes.func,
+    onClick: PropTypes.func
   };
 
   static handleClick = (event) => {
