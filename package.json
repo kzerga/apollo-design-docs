@@ -2,7 +2,7 @@
   "name": "apollo-design-docs",
   "version": "0.1.0",
   "description": "A style guide for the upcoming Apollo Project built with Webpack React Template",
-  "main": "server.js",
+  "main": "scr/index.js",
   "scripts": {
     "start": "node server.js --env=dev",
     "test": "karma start",

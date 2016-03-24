@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Router } from 'react-routing';
+import Navigation from './components/Nav.js';
 
 
 const router = new Router(on => {
@@ -15,6 +16,10 @@ const router = new Router(on => {
       return undefined;
     }
     return <div>{component}</div>;
+  });
+
+  on('/', async (state, next) => {
+    return <Navigation />;
   });
 })
 
