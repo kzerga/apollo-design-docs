@@ -5,15 +5,73 @@
 */
 
 //Opera Color Palette
-$lila-purple: rgba(161, 74, 225, 1);
-$nordlys-green: rgba(67, 212, 176, 1);
-$senja-blue: rgba(102, 75, 228, 1);
-$acai: rgba(114, 0, 78, 1);
-$rosado-pink: rgba(234, 113, 160, 1);
-$terre-clay: rgba(112, 85, 99, 1);
-$primary-red: rgba(255, 27, 45, 1);
-$secondary-red: rgba(180, 25, 51, 1);
-$slate: rgba(85, 102, 119, 1);
-$vino-plum-purple: rgba(40, 7, 44, 1);
+$lila-purple: rgba(161, 74, 225, 1); //#A14AE1
+$nordlys-green: rgba(67, 212, 176, 1); //#43D4B0
+$senja-blue: rgba(102, 75, 228, 1); //#664BE4
+$acai: rgba(114, 0, 78, 1); //#72004E
+$rosado-pink: rgba(234, 113, 160, 1); //#EA71A0
+$terre-clay: rgba(112, 85, 99, 1); //#705563
+$primary-red: rgba(255, 27, 45, 1); //#FF1B2D
+$secondary-red: rgba(180, 25, 51, 1); //#B41933
+$slate: rgba(85, 102, 119, 1); //#556677
+$vino-plum-purple: rgba(40, 7, 44, 1); //#29072C
+
+//Opera Color Palette DARKEN 10%
+$darker-lila-purple: darken( $lila-purple, 10% );
+$darker-nordlys-green: darken( $nordlys-green, 10% );
+$darker-senja-blue: darken( $senja-blue, 10% );
+$darker-acai: darken( $acai, 10% );
+$darker-rosado-pink: darken( $rosado-pink, 10% );
+$darker-terre-clay: darken( $terre-clay, 10% );
+$darker-primary-red: darken( $primary-red, 10% );
+$darker-secondary-red: darken( $secondary-red, 10% );
+$darker-slate: darken( $slate, 10% );
+$darker-vino-plum-purple: darken( $vino-plum-purple, 10% );
+
+//Opera Color Palette LIGHTEN 10%
+$lighter-lila-purple: lighten( $lila-purple, 10% );
+$lighter-nordlys-green: lighten( $nordlys-green, 10% );
+$lighter-senja-blue: lighten( $senja-blue, 10% );
+$lighter-acai: lighten( $acai, 10% );
+$lighter-rosado-pink: lighten( $rosado-pink, 10% );
+$lighter-terre-clay: lighten( $terre-clay, 10% );
+$lighter-primary-red: lighten( $primary-red, 10% );
+$lighter-secondary-red: lighten( $secondary-red, 10% );
+$lighter-slate: lighten( $slate, 10% );
+$lighter-vino-plum-purple: lighten( $vino-plum-purple, 10% );
+
+//Font Colors
+$darker-grey: rgba(60, 69, 73, 1); //#3C4549
+$dark-grey: rgba(89, 97, 100, 1); //#596164
+$grey: rgba(119, 125, 128, 1); //#777D80
+$light-grey: rgba(148, 153, 155, 1); //#94999B
+$lighter-grey: rgba(177, 181, 182, 1); //#B1B5B6
+
 
 //BOOTSTRAP BUTTON VARIABLES
+//$btn-default-bg:
+$btn-primary-bg: $nordlys-green;
+$btn-success-bg: $acai;
+$btn-info-bg: $senja-blue;
+$btn-warning-bg: $vino-plum-purple;
+$btn-danger-bg: $secondary-red;
+$btn-link-color: $senja-blue;
+
+
+// Bootstrap Labels
+$label-default-bg:            $terre-clay;
+$label-primary-bg:            $nordlys-green;
+$label-success-bg:            $acai;
+$label-info-bg:               $senja-blue;
+$label-warning-bg:            $vino-plum-purple;
+$label-danger-bg:             $secondary-red;
+
+
+
+
+//progress bar
+//$progress-bar-bg:             $brand-primary;
+$progress-bar-success-bg:     $acai;
+$progress-bar-warning-bg:     $vino-plum-purple;
+$progress-bar-danger-bg:      $secondary-red;
+$progress-bar-info-bg:        $senja-blue;

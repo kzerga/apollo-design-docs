@@ -44,7 +44,7 @@ class Navigation extends Component {
   }
 
   render() {
-    const items = [{category: 'overview'}, {category: 'buttons'}, {category: 'color'}];
+    const items = [{category: 'overview'}, {category: 'buttons'}, {category: 'color'}, {category: 'typography'}];
     return (
       <div className="col-sm-3 col-md-2 sidebar">
         <ul className = "nav nav-sidebar">
@@ -55,3 +55,4 @@ class Navigation extends Component {
   }
 }
  export default Navigation;
+
