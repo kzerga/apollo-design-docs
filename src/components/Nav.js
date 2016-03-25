@@ -16,7 +16,7 @@ class Navigation extends Component {
   };
 
   static defaultProps = {
-    items: [{category: 'overview'}, {category: 'buttons'}, {category: 'color'}]
+    items: [{category: 'overview'}, {category: 'buttons'}, {category: 'color'}, {category: 'typography'}]
   };
 
   constructor(props) {
@@ -54,3 +54,4 @@ class Navigation extends Component {
   }
 }
  export default Navigation;
+

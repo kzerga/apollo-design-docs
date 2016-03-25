@@ -8,6 +8,8 @@ import Overview from './components/Overview.js';
 import ButtonsPage from './components/ButtonsPage.js';
 import ColorPage from './components/ColorPage.js';
 import linkState from './utils/linkState.js';
+import Typography from './components/Typography';
+import linkState from './utils/linkState';
 
 import './loadPlugins.js';
 import '!style!css!sass!./styles/App.scss';
@@ -19,6 +21,7 @@ export default {
   Overview,
   ButtonsPage,
   ColorPage,
+  Typography,
   utils: {
     linkState
   }
