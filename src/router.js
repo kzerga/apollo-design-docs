@@ -5,7 +5,11 @@
 
 import React from 'react';
 import { Router } from 'react-routing';
-import Navigation from './components/Nav.js';
+import AppLayout from './components/AppLayout.js';
+import Started from './components/GettingStarted.js';
+import Overview from './components/Overview.js';
+import ButtonsPage from './components/ButtonsPage.js';
+import ColorPage from './components/ColorPage.js';
 
 
 const router = new Router(on => {
@@ -19,7 +23,19 @@ const router = new Router(on => {
   });
 
   on('/', async (state, next) => {
-    return <Navigation />;
+    return <AppLayout><Started /></AppLayout>;
+  });
+
+  on('/Overview', async (state, next) => {
+    return <AppLayout><Overview /></AppLayout>
+  });
+
+  on('/Buttons', async (state, next) => {
+    return <AppLayout><ButtonsPage /></AppLayout>
+  });
+
+  on('/Color', async (state, next) => {
+    return <AppLayout><ColorPage /></AppLayout>
   });
 })
 
